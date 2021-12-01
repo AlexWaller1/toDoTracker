@@ -14,9 +14,19 @@
     <title>To Do Tracker</title>
   </head>
   <body>
-    <header>
-      <h1 id="home-page-header">To Do Tracker</h1>
-    </header>
+    <section class="container">
+      <header>
+        <h1 id="home-page-header">To Do Tracker</h1>
+      </header>
+      <div>
+        <label for="to-do-list">New Item</label>
+        <input type="text" id="to-do-form" />
+        <button id="to-do-list-button" class="btn btn-light">Add Task</button>
+      </div>
+      <br />
+
+      <ul id="to-do-list"></ul>
+    </section>
     <script src="tracker.js"></script>
   </body>
 </html>

@@ -11,3 +11,20 @@ body {
 #msg-1 {
   font-size: large;
 }
+
+#delete-button {
+  margin-left: 25px;
+  border-radius: 12px;
+  background-color: #555555; /* Black */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: x-large;
+}
+
+#list-item {
+  margin-bottom: 25px;
+}

@@ -16,22 +16,26 @@ function onSubmit(e) {
   } else {
     msg1.innerHTML = "Get To Work!";
     const li = document.createElement("li");
-    const deleteButton = document.createElement("button");
+    li.id = "list-item";
+    let deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Complete Task";
-    deleteButton.class = "btn btn-light";
+    deleteButton.id = "delete-button";
+    deleteButton.classList.add("btnbtn-light");
     li.appendChild(
       document.createTextNode(`
       ${toDoForm.value}`)
     );
+    li.appendChild(deleteButton);
     toDoList.appendChild(li);
-    toDoList.appendChild(deleteButton);
+    // toDoList.appendChild(deleteButton);
 
     // clear fields
     toDoForm.value = "";
 
     deleteButton.addEventListener("click", function () {
       toDoList.removeChild(li);
-      toDoList.removeChild(deleteButton);
+      // toDoList.removeChild(deleteButton);
+      deleteButton = "";
     });
   }
 }

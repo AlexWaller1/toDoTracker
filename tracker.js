@@ -44,7 +44,10 @@ function displayTasks() {
 
     deleteButton.addEventListener("click", function () {
       toDoList.removeChild(li);
-
+      tasksArray.splice(i, 1);
+      localStorage.clear();
+      let taskJSON = JSON.stringify(tasksArray);
+      localStorage.setItem("task-list", taskJSON);
       deleteButton = "";
     });
   }

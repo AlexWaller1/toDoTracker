@@ -40,6 +40,8 @@ function liMaker(text) {
     toDoList.removeChild(li);
 
     deleteButton = "";
+
+    count++;
   });
 }
 

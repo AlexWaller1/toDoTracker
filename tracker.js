@@ -44,7 +44,7 @@ function displayTasks() {
 
     deleteButton.addEventListener("click", function () {
       toDoList.removeChild(li);
-      // localStorage.getItem("task-list").splice(i, 1);
+
       deleteButton = "";
     });
   }
